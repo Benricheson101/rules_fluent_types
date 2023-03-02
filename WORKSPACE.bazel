@@ -1,0 +1,8 @@
+workspace(name = "rules_fluent_types")
+
+load(
+  "@rules_fluent_types//:deps.bzl",
+  "register_fluent_types_toolchain"
+)
+
+register_fluent_types_toolchain()

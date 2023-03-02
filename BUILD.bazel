@@ -1,0 +1,12 @@
+toolchain_type(
+  name = "toolchain_type",
+  visibility = ["//visibility:public"],
+)
+
+load("@rules_fluent_types//:defs.bzl", "fluent_types_generate")
+
+fluent_types_generate(
+  name = "ft",
+  srcs = ["lang/common.ftl", "lang/en/lang.ftl"],
+  out = "build/src/lang.d.ts",
+)
