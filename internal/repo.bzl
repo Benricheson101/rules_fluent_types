@@ -39,7 +39,6 @@ def _fluent_types_download(ctx):
     ctx.attr._build_tpl,
     substitutions = {
       "{exec_constraints}": constraint_str,
-      "{target_constraints}": constraint_str,
       "{ext}": ext,
     },
   )

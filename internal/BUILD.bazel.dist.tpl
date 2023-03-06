@@ -8,7 +8,6 @@ fluent_types_toolchain(
 toolchain(
   name = "toolchain",
   exec_compatible_with = [{exec_constraints}],
-  target_compatible_with = [{target_constraints}],
   toolchain_type = "@rules_fluent_types//:toolchain_type",
   toolchain = ":toolchain_impl",
 )
