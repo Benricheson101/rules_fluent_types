@@ -7,31 +7,37 @@ fluent_types_download = _fluent_types_download
 def register_fluent_types_toolchain():
   releases = [
     {
-      "urls": ["https://github.com/Benricheson101/fluent-types/releases/download/v1.0.7/fluent-types-aarch64-apple-darwin.tar.gz"],
-      "sha256": "a4839387d667bd955704aa85279cf570484059a7ea4db81bbcd0aae80412a6b6",
-      "os": "macos",
-      "arch": "arm64",
-    },
-    {
-      "urls": ["https://github.com/Benricheson101/fluent-types/releases/download/v1.0.7/fluent-types-x86_64-apple-darwin.tar.gz"],
-      "sha256": "37ac90aae4d0cfbd210968e4e66fcec617bf875cc0d2c8b4489cd377717d676f",
-      "os": "macos",
-      "arch": "x86_64",
-    },
-
-    {
-      "urls": ["https://github.com/Benricheson101/fluent-types/releases/download/v1.0.7/fluent-types-x86_64-unknown-linux-gnu.tar.gz"],
-      "sha256": "55985ccd0106102701cdc9be95858eab6164671186b63e26621a1e25cb7ab392",
+      "urls": [
+        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.12/fluent-types-x86_64-unknown-linux-gnu.tar.gz"
+      ],
+      "sha256": "c2bc7929036ef2e8656928aaca0b5d8ea5539e933edc9962fa2d197695c1846e",
       "os": "linux",
-      "arch": "x86_64",
+      "arch": "x86_64"
     },
-    # TODO: how do I make an x86_64 musl target instead of gnu
-    # {
-    #   "urls": ["https://github.com/Benricheson101/fluent-types/releases/download/v1.0.7/fluent-types-x86_64-unknown-linux-musl.tar.gz"],
-    #   "sha256": "37fc10e1f79e93360c3c33579cd5a3bade4fdfc20fe26b27332d66593183fe17",
-    #   "os": "linux",
-    #   "arch": "x86_64",
-    # },
+    {
+      "urls": [
+        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.12/fluent-types-aarch64-unknown-linux-gnu.tar.gz"
+      ],
+      "sha256": "54457e336e90963a3517d29d77f75c99a859a3027b7bd8953c4c883a10839dd9",
+      "os": "linux",
+      "arch": "arm64"
+    },
+    {
+      "urls": [
+        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.12/fluent-types-x86_64-apple-darwin.tar.gz"
+      ],
+      "sha256": "da50acd93740f0c5fe93f139e636ee1d688fb0695c45b613e760b965a4b1df0d",
+      "os": "macos",
+      "arch": "x86_64"
+    },
+    {
+      "urls": [
+        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.12/fluent-types-aarch64-apple-darwin.tar.gz"
+      ],
+      "sha256": "b4bf75cc3807f53d5e2fa2db99eb5cf9fa48cc4564777bd13f3617046f902357",
+      "os": "macos",
+      "arch": "arm64"
+    }
   ]
 
   for r in releases:
