@@ -8,37 +8,38 @@ def register_fluent_types_toolchain():
   releases = [
     {
       "urls": [
-        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.12/fluent-types-x86_64-unknown-linux-gnu.tar.gz"
+        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.13/fluent-types-x86_64-unknown-linux-gnu.tar.gz"
       ],
-      "sha256": "c2bc7929036ef2e8656928aaca0b5d8ea5539e933edc9962fa2d197695c1846e",
+      "sha256": "842d48dfc3688afdf48e82fb8042604fbbe6e26d2fdbabbc1252ea02fa29f40c",
       "os": "linux",
       "arch": "x86_64"
     },
     {
       "urls": [
-        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.12/fluent-types-aarch64-unknown-linux-gnu.tar.gz"
+        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.13/fluent-types-aarch64-unknown-linux-gnu.tar.gz"
       ],
-      "sha256": "54457e336e90963a3517d29d77f75c99a859a3027b7bd8953c4c883a10839dd9",
+      "sha256": "ff682a1874e2deb603d906a88a963fb0af7a172ea52f9477fd2186b6cc80d63a",
       "os": "linux",
       "arch": "arm64"
     },
     {
       "urls": [
-        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.12/fluent-types-x86_64-apple-darwin.tar.gz"
+        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.13/fluent-types-x86_64-apple-darwin.tar.gz"
       ],
-      "sha256": "da50acd93740f0c5fe93f139e636ee1d688fb0695c45b613e760b965a4b1df0d",
+      "sha256": "69892c7cd200a0712bb5f170938bf3fba5c1edf76a56e1ca19959d96dd711254",
       "os": "macos",
       "arch": "x86_64"
     },
     {
       "urls": [
-        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.12/fluent-types-aarch64-apple-darwin.tar.gz"
+        "https://github.com/Benricheson101/fluent-types/releases/download/v1.0.13/fluent-types-aarch64-apple-darwin.tar.gz"
       ],
-      "sha256": "b4bf75cc3807f53d5e2fa2db99eb5cf9fa48cc4564777bd13f3617046f902357",
+      "sha256": "afb0d3f5ae84df563ddd03ae9c9a44dfd643b073132fd84f2621dba768fbb469",
       "os": "macos",
       "arch": "arm64"
     }
   ]
+
 
   for r in releases:
     name = "fluent_types_{}_{}".format(r["os"], r["arch"])
